@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Percent Off Calculator</h1>
+ <p>
+    "Percent off" and "a discount" are the exact same thing. Imagine it's Black Friday and all of the goods in a certain store are 75% off. Our sale calculator will figure out how much money stays in your pocket!
+  </p>
+  <p>
+    Source: https://www.omnicalculator.com/finance/percent-off
+  </p>
+<br />
+<ion-item>
+  <ion-label>Original Price:</ion-label>
+  <ion-input type="number" [(ngModel)]="originalPrice"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Percent Off [in percent]:</ion-label>
+  <ion-input type="number" [(ngModel)]="percentOff"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Sales Tax [in percent]:</ion-label>
+  <ion-input type="number" [(ngModel)]="salesTax"></ion-input>
+</ion-item>
+
+<button ion-button color="secondary" (click)="calculatePrice ()">
+  CALCULATE
+</button>
+
+<ion-item *ngIf="finalPrice">
+  <h2>Final Price: {{finalPrice}} </h2>
+</ion-item>
+
+<ion-item *ngIf="savings">
+  <h2>Savings: {{savings}} </h2>
+</ion-item>

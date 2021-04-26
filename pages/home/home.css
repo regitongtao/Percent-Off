@@ -1,0 +1,15 @@
+ion-content{
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+}
+
+h1{
+  color: white;
+  font-style: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: justify;
+  color: white;
+  font-style: bold;
+}
